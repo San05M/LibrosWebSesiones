@@ -17,8 +17,8 @@ const libros = require(__dirname + '/routes/libros');
 const autores = require(__dirname + '/routes/autores');
 const auth = require(__dirname + '/routes/auth');
 
-// Conectar con BD en Mongo 
-mongoose.connect('mongodb://127.0.0.1:27017/libros');
+// Conectar con BD en Mongo en vps
+mongoose.connect('mongodb://mymongodb:27017/libros');
 
 // Inicializar Express
 let app = express();
